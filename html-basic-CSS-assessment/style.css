@@ -2,5 +2,49 @@ body {
   margin: 0;
   line-height: 1.5;
   text-transform: uppercase;
+  background-color:#8eb8fa ;
+  font-family: sans-serif;
+  font-style: bold;
+  text-align: justify;
+ 
+}
+
+#header{
+  text-align: left;
+  color: white;
+  font-weight: bolder;
+}
+#subhead{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -250px;
+  font-size: 35px;
+  font-weight: bold;
+  
+}
+#main{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -400px;
+  color: white;
+  font-size: 100px;
+  font-weight: bolder;
+  
+
+}
+#link{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: 100px;
+  margin-left: -170px;
+  border: 3px solid white;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
 }
 
