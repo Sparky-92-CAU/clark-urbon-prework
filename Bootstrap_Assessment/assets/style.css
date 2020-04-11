@@ -1,0 +1,45 @@
+body {
+ 
+  text-transform: uppercase;
+  background-color:#abb6c9 ;
+
+}
+
+a{
+  color: white;
+}
+
+.jumbotron{
+
+    background-color:#abb6c9 ;
+    
+}
+
+.btn , .btn:focus {
+    background-color: #abb6c9;
+    box-shadow: none;
+    
+}
+
+.btn:visited {
+    background-color: #abb6c9;
+    
+}
+
+.btn:hover{
+    background-color: #32a852;
+}
+
+.main{
+    color: white;
+    font-size: 100px;
+    padding: 100px;
+}
+.sub{
+    font-size: 25px;
+}
+
+.card{
+    background-color:#abb6c9 ;
+    border: none;
+}
