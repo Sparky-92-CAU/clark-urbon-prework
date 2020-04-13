@@ -1,8 +1,20 @@
 body{
    
     background-image: url('../images/hexellence.png');
+    
 }
 
 .jumbotron{
     background-color: white;
+    
+}
+
+
+ .navbar-brand { 
+    background-color:#4aaaa5;
+    color:white; 
+} 
+
+h1{
+    color:#4aaaa5;
 }
