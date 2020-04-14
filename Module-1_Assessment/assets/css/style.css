@@ -1,20 +1,71 @@
 body{
    
     background-image: url('../images/hexellence.png');
+}
+
+h1{
+    color:#4aaaa5;
+}
+
+hr{
+    border-color: #dddddd;
+    border-width: 2px;
+}
+
+.rounded{
+    height: 200px;
+    width: 200px;
+    float:left;
+    margin-right: 2%;
+}
+
+.thumbnail .img-fluid{
+    position: relative;
+    height: 200px;
+    width: 400px;
     
+}
+
+footer{
+    background-color: #666666;
+    border-top-style: solid;
+    border-width: thick;
+    border-top-color: #4aaaa5;
 }
 
 .jumbotron{
     background-color: white;
-    
+    margin-top:5%;   
+}
+
+.navbar-brand { 
+    background-color:#4aaaa5;
+    padding: 10px;
+}
+
+.navbar{
+
+    padding-bottom: 0%;
+    background-color: white; 
+}
+
+#brand{
+    color: white;
 }
 
 
- .navbar-brand { 
-    background-color:#4aaaa5;
-    color:white; 
-} 
+.thumbnail {
+    position: relative;
+    margin: 5%;
+}
 
-h1{
-    color:#4aaaa5;
+.caption {
+    position: absolute;
+    vertical-align: middle;
+    padding-top: 5px;
+	bottom: 10px;
+	color: #fff;
+	text-align: center;
+	background: #4aaaa5;
+    width: 100%;
 }
