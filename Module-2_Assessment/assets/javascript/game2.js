@@ -2,8 +2,7 @@
 let guesses = 10;
 let lettersUsed = [];
 let wins = 0;  
-let wordBank= ['mimosa','gimlet','mojito','manhattan','martini'];
-let alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+let wordBank= ['apple','banana','grape','orange','kjahskfjhaskdjfhak'];
 // set random word from wordbank
 let word = wordBank[Math.floor(Math.random() *wordBank.length)];
 let wordArray = word.split();
@@ -76,7 +75,7 @@ const updateBoard = function(event){
         console.log(wordArray);
     }
      //key not in word and not used   
-     else if(!lettersUsed.includes(key) && alphabet.includes(key)) {
+     else if(!lettersUsed.includes(key)) {
         
         lettersUsed.push(key);
         guesses--;
