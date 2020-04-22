@@ -1,5 +1,3 @@
 # clark-urbon-prework
 
-check out my prework live:
-
-https://sparky-92-cau.github.io/
+Includes all lesson and module assesments
