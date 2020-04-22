@@ -12,13 +12,18 @@ let wordPlaceholder = [];
     for(let i =0;i<word.length;i++){
         wordPlaceholder.push('_ ');
     };
+//audio files
+var win = new Audio('assets/sounds/win.mp3');
+var lose = new Audio('assets/sounds/lose.mp3');
 
+       
 
 // get element id's
 const guessesID = document.querySelector('#guesses');
 const usedID = document.querySelector('#used');
 const winsID = document.querySelector('#wins');
 const wordDisplayed = document.querySelector('#word');
+const picID = document.querySelector('#picture')
 
 // place values in html  
 const setBoard = function(){
@@ -27,6 +32,31 @@ const setBoard = function(){
     guessesID.innerText = `Guesses Left: ${guesses}`;
     usedID.innerText = `Letters Used: ${lettersUsed}`;
     winsID.innerText = `Number of Wins: ${wins}`;
+//place image value that matches with the random word
+    if (word == 'mimosa'){
+        picID.src = 'assets/images/mimosa.png';
+         
+    }
+    else if(word == 'gimlet'){
+        picID.src = 'assets/images/gimlet.png';
+
+    }
+    else if (word=='mojito'){
+        picID.src = 'assets/images/mojito.png';
+
+    }
+    else if(word=='manhattan'){
+        picID.src = 'assets/images/man.png';
+
+    }
+    else if(word=='martini'){
+        picID.src = 'assets/images/martini.png';
+
+    }
+    else{
+        picID.src = '#';
+
+    };
 
     console.log(word);
 };
@@ -50,7 +80,7 @@ const resetBoard = function(){
 const updateBoard = function(event){
     // key that is pressed    
     const key = event.key;
-     
+    
     //key is in word and not already used
     if (word.includes(key) && !lettersUsed.includes(key)) {
         
@@ -83,15 +113,18 @@ const updateBoard = function(event){
         console.log('not found');
 
      }
-     //if theres a win, increment wins and reset board
+     //if theres a win, increment wins and reset board, play win sound
      if (wordPlaceholder.join('')==word){
         wins++;
-        alert('You won!');
+        win.play();
+        alert(`Congrats! you geussed the word : ${word}`);
         resetBoard();
 
      };
+     //if no win, reset board, play lose sound
      if (guesses == 0 && wordPlaceholder.join('')!=word){
-        alert('You lost!');
+        lose.play();
+        alert(`You lost! The word was: ${word}`);
         resetBoard();
      };
      //set board with new values
