@@ -1,3 +1,6 @@
+[Link to live game](https://sparky-92-cau.github.io/hangman.html)
+
+
 **Hangman Game** 
 
 
